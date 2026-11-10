@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Filmcatalog — твой личный каталог фильмов и сериалов">
+<title>Filmcatalog</title>
+</head>
+<style>
+body { font-family: Arial, sans-serif; max-width: 900px;
+margin: 0 auto; padding: 20px; line-height: 1.5; color: #000000; }
+h1, h2 { color: #063c3e; }
+nav a { margin-right: 12px; }
+form, table { border: 1px solid #b7cec5; padding: 12px; margin-bottom: 16px;
+}
+table, th, td { border: 1px solid #999; border-collapse: collapse; }
+th, td { padding: 8px 12px; }
+th { background: #803e03; }
+label { display: block; margin-top: 8px; }
+footer { text-align: center; color: #999; margin-top: 20px; }
+</style>
+<header>
+<h1>Filmcatalog</h1>
+<p>Твой личный каталог фильмов.Пока это интерфейс.</p>
+</header>
+<nav>
+<a href="#add">Добавить фильм</a>
+<a href="#data">Список фильмов</a>
+<a href="#help">Жанры</a>
+<a href="https://github.com/XSAFFIS" target="_blank">XSAFFIS</a>
+</nav>
+<main>
+<section id="add">
+<h2>Добавить новый фильм или сериал</h2>
+<form action="#" method="get">
+<label for="title">Название фильма</label>
+<input type="text" id="movie-title" name="movie-title"
+placeholder="Например: сумерки" required>
+<label for="desc">Описание.</label>
+<textarea id="desc" name="desc" rows="3" cols="40"
+placeholder="Краткое описание / Сюжет"></textarea>
+<label for="cat">Жанр</label>
+<select id="cat" name="cat">
+<option value="sci-fi">Фантастика</option>
+<option value="drama">Драма</option>
+<option value="action">Боевик</option>
+<option value="comedy">Комедия</option>
+</select>
+<label for="date">Дата премьеры</label>
+<input type="date" id="date" name="date">
+<label for="priority">Ваша оценка (от 1 до 10)</label>
+<input type="number" id=priority" name="priority" min="1" max="10"
+value="5">
+
+<button type="submit">Добавить в каталог</button>
+<button type="reset">Очистить форму</button>
+</form>
+</section>
+<body>
+    <section id="data">
+<h2>Мой каталог фильмов</h2>
+<table>
+<caption>пример наполнения интерфейса</caption>
+<thead>
+<tr>
+<th>Название</th>
+<th>жанр</th>
+<th>Дата премьеры</th>
+<th>Рейтинг</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Интерстеллар</td>
+<td>Фантастика</td>
+<td>2014-10-26</td>
+<td>9</td>
+</tr>
+<tr>
+<td>1+1</td>
+<td>Драма</td>
+<td>2011-09-23</td>
+<td>10</td>
+</tr>
+</tbody>
+<tfoot>
+<tr>
+<td colspan="4">Всего фильмов: 2 (данные добавятся позже)</td>
+</tr>
+</tfoot>
+</table>
+</section>
+<section id="help">
+<h2>Помощь</h2>
+<details>
+<summary>Как добавить фильм в каталог?</summary>
+<p>Заполните форму выше (название, жанр, дату премьеры, оценку) и нажмите «Добавить каталог». Пока данные не
+сохраняются — добавим JavaScript позже.</p>
+
+</details>
+<details>
+<summary>Что дальше?</summary>
+<p>Следующая работа — оформление интерфейса на CSS.</p>
+</details>
+</section>
+</main>
+<footer>
+<p>&copy; 2026, Каталог фильмов Filmcatalog &bull; <a href="mailto:lyalay@mail.ru">lyalay@mail.ru</a></p>
+</footer>
+</body>
+</html>
+</body>
+</html>
